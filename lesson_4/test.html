@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-9DRG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-9DRG');</script>
+  <!-- End Google Tag Manager -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<link rel="dns-prefetch" href="//cdn.forbes.ru" />
+<!--[if IE 9]>
+<link rel="prefetch" href="//cdn.forbes.ru" />
+<![endif]-->
+<meta property="og:type" content="website" />
+<meta name="twitter:creator" content="@ForbesRussia" />
+<meta property="fb:app_id" content="1700610573541605" />
+<link rel="shortcut icon" href="http://www.forbes.ru/sites/default/files/favicon_1.ico" type="image/vnd.microsoft.icon" />
+<meta name="description" content="Тринадцатый рейтинг эстрадных исполнителей, артистов театра, кино и спортсменов..." />
+<meta property="og:description" content="Тринадцатый рейтинг эстрадных исполнителей, артистов театра, кино и спортсменов..." />
+<meta name="twitter:description" content="Тринадцатый рейтинг эстрадных исполнителей, артистов театра, кино и спортсменов..." />
+<meta name="twitter:title" content="Рейтинг Forbes: главные российские знаменитости — 2017" />
+<meta property="og:title" content="Рейтинг Forbes: главные российские знаменитости — 2017" />
+<meta name="title" content="Рейтинг Forbes: главные российские знаменитости — 2017" />
+<meta name="mediator_published_time" content="2017-07-27T07:02:01+03:00" />
+<meta name="twitter:image" content="http://www.forbes.ru/sn-image/348311_265099.jpeg" />
+<meta name="twitter:site" content="@forbesrussia" />
+<link rel="image_src" href="http://www.forbes.ru/sn-image/348311_265099.jpeg" />
+<meta id="nodenid" content="348311" />
+<meta name="relap-image" content="http://cdn.forbes.ru/sites/default/files/styles/530_313/public/rating_main/raiting-vse.jpg__1500987341__62217.jpg?itok=IPLjk9ha" />
+<meta name="mediator_theme" content="Бизнес" />
+<meta id="node_section" content="35777" />
+<meta property="og:url" content="http://www.forbes.ru/rating/348311-reyting-forbes-glavnye-rossiyskie-znamenitosti-2017" />
+<meta property="og:image" content="http://www.forbes.ru/sn-image/348311_265099.jpeg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="800" />
+<meta property="og:image:height" content="419" />
+<link rel="canonical" href="http://www.forbes.ru/rating/348311-reyting-forbes-glavnye-rossiyskie-znamenitosti-2017" />
+<meta name="twitter:card" content="summary_large_image" />
+  <!--[if lt IE 9]>
+  <script>
+    document.createElement('header');
+    document.createElement('footer');
+  </script>
+  <![endif]-->
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+  <meta name="adriverOptions" content="autoLoad:1" />
+  <meta name="mailru-verification" content="3dcff3cb29d85877" />
+  <meta property="fb:pages" content="451748848305233" />
+  <meta property="fb:pages" content="315590990710" />
+  <title>Рейтинг Forbes: главные российские знаменитости — 2017 | Forbes.ru</title>
+  <link type="text/css" rel="stylesheet" href="http://www.forbes.ru/sites/default/files/cdn/css/http/css_RT18oKFfT9VQzaYg-VEKWfah4i9PxJUBVtI4j_hvF2Y_system.base.css.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.forbes.ru/sites/default/files/cdn/css/http/css_qa8ZSEZRZ-8oagMi4QeZNxFlOHf-2tLToyf2NJgWv3k_system.menus.css.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.forbes.ru/sites/default/files/cdn/css/http/css_vRFJ6a-9p2NZSrPXqM555KZ7yOLcUvhidTEWzUqNbnU_system.messages.css.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.forbes.ru/sites/default/files/cdn/css/http/css_zYZRnJifw5rPbTWL-6UBdkl30wMDXViZjL1f1eSpceA_system.theme.css.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.forbes.ru/sites/default/files/cdn/css/http/css_NhlAG6gcdxlpbGISXia7pATGMv4FKdOCM6PkrOySrbg_comment.css.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.forbes.ru/sites/default/files/cdn/css/http/css_mVbAwHFC4teH8QnlrR4HjS3odTpW_y7a4J_ULaUdWmE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.forbes.ru/sites/default/files/cdn/css/http/css_v9OPL7CCxdxt0fQ6nZYnJZlmu31VKyCCziJn6IIqvmQ_field.css.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.forbes.ru/sites/default/files/cdn/css/http/css_0muqAdhlq0GtNYKoQWQjCD6qakQ8IXI55FaftPNtzlk.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.forbes.ru/sites/default/files/cdn/css/http/css_ZWPWucire0gNZjcOKI_ScbXqCk_5fY1aiC_sYgYUhu4_node.css.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.forbes.ru/sites/default/files/cdn/css/http/css_Vl7GwnZ-ioRDtXMcIRm3IKAaQwNfjR_PQh_SA3WeV90_poll.css.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.forbes.ru/sites/default/files/cdn/css/http/css_0eEtmv7QcFoZoLjMcfCieo5cYDKnfLKO1xSQn3FjMHE_search.css.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.forbes.ru/sites/default/files/cdn/css/http/css_jICQ0tiRF_a6W8oA5m_gp0EIhQwdHQC1SlRK3AdU9ao_user.css.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.forbes.ru/sites/default/files/cdn/css/http/css_sRoiJhQvJQq6QeaA_k2TBTUGBBlzX2SqcMVA03KcM3A.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.forbes.ru/sites/default/files/cdn/css/http/css_UT9s93YVzRv0y8TiwRiSG571NWCS5GL2-uToiGOmq9o.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.forbes.ru/sites/default/files/cdn/css/http/css_jnpggtab5UiOuyUu4jCnbxc6t2VeZ6im1Woo4oaYLyQ_style.css.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.forbes.ru/sites/default/files/cdn/css/http/css_4f6poY6GV7WAFWfNii7rq6ckzqdk2LA3LOz-aLF-8bI_article.css.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.forbes.ru/sites/default/files/cdn/css/http/css_BKLg7z31jIagttDJ871YwUN3xlTymmnH0c4bPxoCPF8_slick.css.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.forbes.ru/sites/default/files/cdn/css/http/css_2kf--h6mzVXfwiHMrDdfZEPnuJ5CmhMhGRBQZ7QAzFQ_slick-theme-main-page.css.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.forbes.ru/sites/default/files/cdn/css/http/css_K0caDA5NUoepOrWQGxFXXIOsdsJVXzIvpBhzpDbYAZY_slick-theme-block-gallery.css.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.forbes.ru/sites/default/files/cdn/css/http/css_c5-joYWJIQ7Iatm7Un0flDq1-5K26hRAj_QwQcOMWsQ_media.css.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.forbes.ru/sites/default/files/cdn/css/http/css_cJg-rDzSwnwY4QnUsw0zGqEZqREE4uA_YIwVcO8AXTY_jquery.mCustomScrollbar.css.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.forbes.ru/sites/default/files/cdn/css/http/css_EP4BlyQ9cNJHeKSPiTvVDLF821eAfeHGm-2nkuUn5nY_style2.css.css" media="all" />
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/libraries/adfox/adfox.css"/>
+  <script type="text/javascript" src="/sites/all/themes/forbes/js/anticrash.js" charset="utf-8"></script>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery || document.write("<script src='/sites/all/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://www.forbes.ru/sites/default/files/js/js_V1ZuwJK9uzfm6fFffOcHHubfxnimoxnbgG58pvTQdpY.js"></script>
+<script type="text/javascript" src="http://www.forbes.ru/sites/default/files/js/js_R9UbiVw2xuTUI0GZoaqMDOdX0lrZtgX-ono8RVOUEVc.js"></script>
+<script type="text/javascript" src="http://www.forbes.ru/sites/default/files/js/js_XiFsgnPeRJcXYbUOFhFptbQZbnNhXMH3aMittuhVH-U.js"></script>
+<script type="text/javascript" src="https://yastatic.net/pcode/adfox/loader.js"></script>
+<script type="text/javascript" src="http://www.forbes.ru/sites/default/files/js/js_xSdjnKgm3Ox2m9xnjgaEWJckhKIxPv91y4HdNFW8ink.js"></script>
+<script type="text/javascript" src="http://www.forbes.ru/sites/all/themes/forbes/js/slick/slick.min.js?oyfoeg"></script>
+<script type="text/javascript" src="http://www.forbes.ru/sites/all/themes/forbes/js/custom-content-scroller/jquery.mCustomScrollbar.concat.min.js?oyfoeg"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"forbes","theme_token":"d8Je8T-IwBDN0Ck68z19Yjl3r_ba88i1ktks1e4OReU","js":{"sites\/all\/themes\/forbes\/js\/forbes.behaviors.js":1,"\/\/code.jquery.com\/jquery-1.10.2.min.js":1,"0":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/admin_menu\/admin_devel\/admin_devel.js":1,"public:\/\/languages\/ru_PqEnME23XFNT2sSCw-ZCV-GZeLcSIZJkmczMkU2IV0s.js":1,"sites\/all\/modules\/contrib\/fancybox\/fancybox.js":1,"sites\/all\/libraries\/fancybox\/source\/jquery.fancybox.pack.js":1,"sites\/all\/modules\/custom\/forbes_admin_stat\/forbes_admin_stat.js":1,"sites\/all\/modules\/custom\/forbes_curr_informer\/js\/forbes_curr_informer.js":1,"sites\/all\/modules\/custom\/forbes_ratings\/js\/forbes_ratings2.js":1,"https:\/\/yastatic.net\/pcode\/adfox\/loader.js":1,"sites\/all\/libraries\/dataTables\/jquery.dataTables.min.js":1,"sites\/all\/modules\/custom\/forbes_push\/plugins\/content_types\/push_subscribe\/push_subscribe.js":1,"sites\/all\/themes\/forbes\/js\/slick\/slick.min.js":1,"sites\/all\/themes\/forbes\/js\/custom-content-scroller\/jquery.mCustomScrollbar.concat.min.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/custom\/media_video_in_body\/plugins\/video_in_body\/video_in_body.css":1,"modules\/node\/node.css":1,"modules\/poll\/poll.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/libraries\/fancybox\/source\/jquery.fancybox.css":1,"sites\/all\/modules\/custom\/forbes_admin_stat\/forbes_admin_stat.css":1,"sites\/all\/modules\/custom\/forbes_curr_informer\/css\/forbes_curr_informer.css":1,"sites\/all\/modules\/custom\/forbes_ratings\/css\/forbes_ratings3.css":1,"sites\/all\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/libraries\/dataTables\/jquery.dataTables.min.css":1,"sites\/all\/modules\/custom\/forbes_push\/plugins\/content_types\/push_subscribe\/push_subscribe.css":1,"sites\/all\/themes\/forbes\/css\/style.css":1,"sites\/all\/themes\/forbes\/css\/article.css":1,"sites\/all\/themes\/forbes\/js\/slick\/slick.css":1,"sites\/all\/themes\/forbes\/js\/slick\/slick-theme-main-page.css":1,"sites\/all\/themes\/forbes\/js\/slick\/slick-theme-block-gallery.css":1,"sites\/all\/themes\/forbes\/css\/media.css":1,"sites\/all\/themes\/forbes\/js\/custom-content-scroller\/jquery.mCustomScrollbar.css":1,"sites\/all\/themes\/forbes\/css\/style2.css":1}},"fancybox":[]});
+//--><!]]>
+</script>
+
+  <script type="text/javascript" src="/sites/all/themes/forbes/js/jquery.cookie.js" charset="utf-8"></script>
+  <script type="text/javascript" src="/sites/all/themes/forbes/js/head.js?v=2" charset="utf-8"></script>
+  <script type="text/javascript" src="/sites/all/themes/forbes/js/block-json.js?v=1" charset="utf-8"></script>
+  <script type="text/javascript" src="/sites/all/libraries/adfox/adfox.asyn.code.ver3.js" charset="utf-8"></script>
+  <script type="text/javascript" src="/sites/all/libraries/adfox/adfox.asyn.code.scroll.js" charset="utf-8"></script>
+  <script type="text/javascript" src="/sites/all/libraries/adfox/adfox.reload_code.embeds.js" charset="utf-8"></script>
+  <script type="text/javascript" src="/sites/all/libraries/adfox/adfoxlib.js" charset="utf-8"></script>
+  <script type="text/javascript" src="/sites/all/libraries/adriver/adriver.core.2-mod.js" charset="utf-8"></script>
+  <script type="text/javascript">
+        (function (a, b, c, d, e, f, g, h) {
+      g = b.createElement(c);
+      g.src = d;
+      g.type = "application/javascript";
+      g.async = !0;
+      h = b.getElementsByTagName(c)[0];
+      h.parentNode.insertBefore(g, h);
+      a[f] = [];
+      a[e] = function () {
+        a[f].push(Array.prototype.slice.apply(arguments));
+      }
+    })(window, document, "script", (document.location.protocol ===
+      "https:" ? "https:" : "http:") + "//cdn01.nativeroll.tv/js/seedr-player.min.js",
+      "SeedrPlayer", "seedrInit");
+  </script>
+
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-348311 node-type-rating   node-status-1" >
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-9DRG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+      <script language="JavaScript">
+  var createBW = 0;
+  function createBW_Warning() {
+    if(createBW) { return; } else { createBW = 1; }
+    var ourReferer = document.referrer.indexOf('www.forbes.ru')>0?1:0;
+    var section_id = 1*jQuery('#node_section').attr('content');
+    console.log('ref', ourReferer, document.referrer);
+    console.log('section_id', section_id);
+
+    var altDomain = 0 <= window.location.search.substring(1).indexOf('from_alt_domain=1');
+
+        if(!window.ADFOX && (section_id!=17038) && ourReferer && !altDomain) {
+      jQuery('body').removeClass('infinity-page');
+      jQuery('body').addClass('withAdBlock');
+      jQuery('body').append('<div class="blocker_warning">По-видимому, у вас включен AdBlock.<br/>Для комфортной работы с сайтом, пожалуйста, отключите AdBlock. Инструкция по отключению - <a href="https://adblockplus.org/ru/faq_basics#disable">здесь</a>.<br/>Спасибо!<div class="x">[x]</div></div>');
+      jQuery('.blocker_warning .x').click(function(){ jQuery(this).parent().remove(); });
+      setTimeout(function(){
+        if(jQuery('#admin-menu').length) {
+          jQuery('.blocker_warning').css('top', '25px');
+        }
+      }, 1500);
+    }
+  }
+  setTimeout(function () {
+    if(!createBW) createBW_Warning();
+  }, 3000);
+
+
+</script>
+<div class="in-stat-acmedia">
+
+<script type="text/javascript" id="in_stats_348311">
+</script>
+</div>
+
+<!-- Begin comScore Tag -->
+<script>
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "6872493" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+</script>
+<noscript>
+    <img src="http://b.scorecardresearch.com/p?c1=2&c2=6872493&cv=2.0&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+
+   <div class="top-bn">
+     <div>
+       <!--ADVSTART-->
+<!-- Перетяжка разделитель -->
+<!--places banner_long --><!--AdFox START-->
+<!--axelspringer-->
+<!--Площадка: Forbes / * / *-->
+<!--Тип баннера: 1000x90js новый-->
+<!--Расположение: <верх страницы>-->
+<div id="adfox_57846963" data-u-banner="b-top-1" data-banner-type="top-header"></div>
+<div id="adfox_mob_57846963" data-u-banner="b-top-1" data-banner-type="top-header-mob"></div>
+<script>
+if (mob == false && window.Ya) {
+    window.Ya.adfoxCode.create({
+        ownerId: 162070,
+        containerId: 'adfox_57846963',
+        params: {
+            pp: 'g',
+            ps: 'lyw',
+            p2: 'evgu',
+            puid1: '',
+            puid2: '',
+            pk: '',
+            pke: '1'
+       }
+    });
+}
+if (mob == true && window.Ya) {
+    window.Ya.adfoxCode.create({
+        ownerId: 162070,
+        containerId: 'adfox_mob_57846963',
+        params: {
+            pp: 'h',
+            ps: 'lyw',
+            p2: 'evgu',
+            puid1: '',
+            puid2: ''
+       }
+    });
+}
+</script><style>
+#adfox_mob_57846963 > div {
+    margin: 0 auto !important;
+}
+</style><!--ADVEND-->
+
+<!--ADVSTART-->
+<!-- Баннер с цитатой -->
+<!--places background --><!--AdFox START-->
+<!--axelspringer-->
+<!--Площадка: Forbes / * / *-->
+<!--Тип баннера: Fullscreen_Цитата дня-->
+<!--Расположение: <середина страницы>-->
+<div id="adfox_842778045"></div>
+<script>
+    window.Ya.adfoxCode.create({
+        ownerId: 162070,
+        containerId: 'adfox_842778045',
+        params: {
+            pp: 'h',
+            ps: 'lyw',
+            p2: 'fpgt',
+            puid1: '',
+            puid2: ''
+        }
+    });
+</script><!--ADVEND-->
+
+<!--ADVSTART-->
+<!-- Бэкграунд -->
+<!--places background --><!--AdFox START-->
+<!--axelspringer-->
+<!--Площадка: Forbes / * / *-->
+<!--Тип баннера: background refresh-->
+<!--Расположение: <низ страницы>-->
+<div id="adfox_110002794" data-banner-type="bg"></div>
+<script>
+if (mob == false) {
+    window.Ya.adfoxCode.createScroll({
+        ownerId: 162070,
+        containerId: 'adfox_110002794',
+        params: {
+            pp: 'i',
+            ps: 'lyw',
+            p2: 'evgv',
+            puid1: '',
+            puid2: ''
+       }
+    });
+}
+</script><!--ADVEND-->
+
+     </div>
+   </div>
+
+    <header>
+    <div class="modal-menu">
+  <div class="modal-menu-body">
+    <div class="modal-head">
+      <div class="modal-menu-close">
+        <img src="/sites/all/themes/forbes/img/modal-menu-close-v0.1.svg" width="18" height="18" alt="Закрыть" title="Закрыть">
+      </div>
+      <div class="modal-menu-logo">
+        <a href="/">
+          <img src="http://cdn.forbes.ru/sites/all/themes/forbes/img/modal-menu-logo.svg" width="132" height="33" alt="Forbes.ru" title="Forbes.ru">
+        </a>
+      </div>
+    </div>
+    <div class="modal-content">
+      <div class="modal-content-middle">
+        <div class="col-left">
+          <div class="name">Каналы</div>
+          <a class="href" href="/biznes">Бизнес</a>
+          <a class="href" href="/finansy">Финансы и инвестиции</a>
+          <a class="href" href="/milliardery">Миллиардеры</a>
+          <!--<a class="href" href="/kompanii">Компании</a>-->
+          <a class="href" href="/tekhnologii">Технологии</a>
+          <a class="href" href="/svoi-biznes">Карьера и свой бизнес</a>
+          <a class="href forbes-life" href="/forbeslife"></a>
+          <a class="href forbes-woman" href="/forbes-woman"></a>
+        </div>
+        <div class="col-center">
+          <div class="name">материалы</div>
+          <a class="href" href="/news">Новое</a>
+          <a class="href" href="/popular">Популярное</a>
+          <a class="href" href="/mneniya">Мнения</a>
+                    <a class="href" href="/special/100/">Forbes 100 лет</a>
+          <a class="href videoF100" href="http://www.forbes.ru/biznes-package/100-let-forbes351939-milliardery-i-molodye-predprinimateli-pozdravlyayut-forbes">
+            <img src="/sites/all/themes/forbes/img/menu-forbes-video.svg" width="128" height="19" alt="" title="">@100
+          </a>
+          <a class="href" href="/ratings">Рейтинги</a>
+          <a class="href" href="/video">Видео</a>
+          <!--<a class="href" href="#">Журнал</a>-->
+        </div>
+        <div class="col-right">
+          <div class="name">Проекты</div>
+          <a class="href" href="/forbesclub">Forbes Клуб</a>
+<a class="href" href="/school">Школа миллиардера</a>
+<a class="href" href="/brandvoice/aeroflot"><img src="/sites/all/themes/forbes/img/brandvoice/aeroflot.png" /></a>
+<a class="href" href="/brandvoice/emc"><img src="/sites/all/themes/forbes/img/brandvoice/emcbrandvoice-mainmenu-1.png" /></a>
+<a class="href" href="/brandvoice/sap"><img src="/sites/all/themes/forbes/img/brandvoice/sap-bv-1.png" /></a>        </div>
+      </div>
+      <div class="modal-content-hash"><a href="/taxonomy/term/202">#экономика</a><a href="/taxonomy/term/208">#компании</a><a href="/taxonomy/term/2281">#ТЭК</a><a href="/taxonomy/term/22937">#спорт и бизнес</a><a href="/taxonomy/term/3060">#автомобили</a></div>      <div class="modal-content-bottom">
+        <div class="col-left">
+          <div class="modal-subscription-magazine">
+            <a href="http://www.acmedia.info/distribution/#forbes">
+              <img src="http://cdn.forbes.ru/sites/default/files/styles/220_280/public/anons_covers/_fw_cover11_17.jpg__1509020739__72726.jpg?itok=f5D6awlC" width="220" height="280" ><img src="http://cdn.forbes.ru/sites/default/files/styles/220_280/public/anons_covers/_cover_11.jpg__1508429101__65814.jpg?itok=NWUyAeVo" width="220" height="280" ><img src="http://cdn.forbes.ru/sites/default/files/styles/220_280/public/anons_covers/coverlife-07-ipad.jpg__1500544416__86800.jpg?itok=Oh4_PSIi" width="220" height="280" >            </a>
+            Оформите подписку на журналы
+          </div>
+        </div>
+        <div class="col-center">
+          <!--<a class="href" href="#">Архив журнала</a>-->
+          <!--<a class="href" href="#">Архив сайта</a>-->
+          <a class="href" href="/article/39217-usloviya-perepechatki">Условия перепечатки</a>
+        </div>
+        <div class="col-right">
+          <a class="href" href="/reklama-na-saite">Реклама на сайте</a>
+          <a class="href" href="/reklama-v-zhurnale">Реклама в журнале</a>
+          <a class="href" href="/kontakty">Контакты</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-menu-footer">
+    <div class="modal-menu-footer-content">
+      <div class="social-block">
+        <a href="http://instagram.com/acmg_official" target="_blank" class="ig"></a>
+        <a href="https://www.facebook.com/acmg.official" target="_blank" class="fb"></a>
+        <a href="https://twitter.com/acmg_official" target="_blank" class="tw"></a>
+      </div>
+      <div class="copy">
+        © 2016 Forbes Media LLC. All Rights reserved.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="header-menu">
+
+  <div class="header-menu-content">
+    <div class="burger"><span></span></div>
+    <ul class="block-links">
+      <li><a class="pointlink" href="/news">Новое</a></li>
+      <li><a class="pointlink" href="/popular">Популярное</a></li>
+      <li><a class="pointlink" href="/ratings">Рейтинги</a></li>
+      <li><a class="pointlink" href="/video">Видео</a></li>
+      <li><a class="pointlink" href="/mneniya">Мнения</a></li>
+             <li><a class="pointlink" href="/special/100/">Forbes 100 лет</a></li>
+
+      <li class="flfw"><a class="pointlink ForbesWoman" href="/forbes-woman">ForbesWoman</a></li>
+      <li class="flfw"><a class="pointlink ForbesLife" href="/forbeslife">ForbesLife</a></li>
+    </ul>
+  </div>
+  <div class="header-menu-content-mobile">
+    <div class="burger"><span></span></div>
+    <a class="mobile-logo" href="/">
+      <img class="forbes-logo" src="http://cdn.forbes.ru/sites/all/themes/forbes/img/forbes-logo-under-menu__.svg" alt="Forbes.ru" title="Forbes.ru" width="95" height="24" />
+      <img class="forbes-life" src="http://cdn.forbes.ru/sites/all/themes/forbes/img/forbes-life-logo-under-menu-v0.3.svg" alt="Forbes Life" title="Forbes Life" width="340" height="59" />
+      <img class="forbes-woman" src="http://cdn.forbes.ru/sites/all/themes/forbes/img/forbes-woman-logo-under-menu.svg" alt="Forbes Woman" title="Forbes Woman" width="484" height="60" />
+      <img class="forbes-club" src="http://cdn.forbes.ru/sites/all/themes/forbes/img/forbes-club-logo-under-menu.png" alt="Forbes Club" title="Forbes Club" width="389" height="63" />
+      <img class="forbes-school" src="http://cdn.forbes.ru/sites/all/themes/forbes/img/forbes-school-logo-under-menu.png" alt="Forbes Школа Миллиардера" title="Forbes Школа Миллиардера" width="591" height="41" />
+      <img class="forbes-brandvoice" src="http://cdn.forbes.ru/sites/all/themes/forbes/img/forbes-brandvoice-logo-under-menu.svg" alt="Forbes Brandvoice" title="Forbes Brandvoice" width="616" height="65" />
+      <img class="forbes-100let" src="http://cdn.forbes.ru/sites/all/themes/forbes/img/forbes-100.png" alt="Forbes 100 лет" title="Forbes 100 лет" width="529" height="60" />
+    </a>
+  </div>
+  <div class="header-menu-search">
+    <form action="/nodesearch" accept-charset="UTF-8" method="get">
+      <input type="text" maxlength="128" name="search_api_views_fulltext" placeholder="Введите слово для поиска" value="" title="" class="">
+      <input type="hidden" name="sort_order" value="DESC">
+      <input type="hidden" name="sort_by" value="created">
+      <input type="submit" name="" value="Найти" class="">
+    </form>
+    <div class="menu-search-close"></div>
+  </div>
+  <div class="header-menu-search-open"></div>
+  <!-- packages -->
+  </div>        <div class="under-menu">
+      <div class="col-left">
+        <a href="/">
+          <span class="forbes-pic-logo">
+            <img class="forbes-logo" src="http://cdn.forbes.ru/sites/all/themes/forbes/img/forbes-logo-under-menu__.svg" alt="Forbes.ru" title="Forbes.ru" width="220" height="55">
+            <img class="forbes-life" src="http://cdn.forbes.ru/sites/all/themes/forbes/img/forbes-life-logo-under-menu-v0.3.svg" alt="Forbes Life" title="Forbes Life" width="340" height="59">
+            <img class="forbes-woman" src="http://cdn.forbes.ru/sites/all/themes/forbes/img/forbes-woman-logo-under-menu.svg" alt="Forbes Woman" title="Forbes Woman" width="484" height="60">
+            <img class="forbes-club" src="http://cdn.forbes.ru/sites/all/themes/forbes/img/forbes-club-logo-under-menu.png" alt="Forbes Club" title="Forbes Club" width="389" height="63">
+            <img class="forbes-school" src="http://cdn.forbes.ru/sites/all/themes/forbes/img/forbes-school-logo-under-menu.png" alt="Forbes Школа Миллиардера" title="Forbes Школа Миллиардера" width="591" height="41">
+            <img class="forbes-brandvoice" src="http://cdn.forbes.ru/sites/all/themes/forbes/img/forbes-brandvoice-logo-under-menu.svg" alt="Forbes BrandVoice" title="Forbes BrandVoice" width="616" height="65">
+            <img class="forbes-100let" src="http://cdn.forbes.ru/sites/all/themes/forbes/img/forbes-100.png" alt="Forbes 100 лет" title="Forbes 100 лет" width="529" height="60">
+          </span>
+        </a>
+      </div>
+      
+<div class="col-center">
+  <div class="forbes_currencies">
+    <div class="dollevr">
+      <div class="dollar"><span>$</span>58.1</div>
+      <div class="evro"><span>€</span>67.46</div>
+    </div>
+    <div class="curr_list">
+              <div class="curr_item"><span class="curr_title">ММВБ</span>2068.76</div>
+              <div class="curr_item"><span class="curr_title">BRENT</span>60.51</div>
+              <div class="curr_item"><span class="curr_title">RTS</span>1118.62</div>
+              <div class="curr_item red"><span class="curr_title">GOLD</span>1274.00</div>
+          </div>
+    <div class="curr_list_arr"></div>
+  </div>
+</div>
+
+
+  <div class="col-right">
+    <div class="social">
+      <a class="facebook" href="http://facebook.com/forbesrussia" target="_blank" title="facebook"><span>facebook</span></a>
+      <a class="vkontakte" href="https://vk.com/forbes" target="_blank" title="vkontakte"><span>vkontakte</span></a>
+      <a class="twitter" href="http://twitter.com/forbesrussia" target="_blank" title="twitter"><span>twitter</span></a>
+      <a class="flipboard" href="https://flipboard.com/@ForbesRussia" target="_blank" title="flipboard"><span>flipboard</span></a>
+      <a class="telegram" href="https://telegram.me/forbesrussia" target="_blank" title="telegram"><span>telegram</span></a>
+      <a class="rss" href="/newrss.xml" target="_blank" title="rss"><span>rss</span></a>
+    </div>
+  </div>
+    </div>
+      </header>
+
+
+
+
+
+
+  <div class="content">
+    <div class="panel-pane pane-page-content"  >
+  
+      
+  
+  <div class="pane-content">
+    <!--ADVSTART-->
+<!-- Верхний мобильный -->
+<!--places 300_600_top_mobile --><!--AdFox START-->
+<!--axelspringer-->
+<!--Площадка: Forbes / * / *-->
+<!--Тип баннера: 300x250 New Mobile-->
+<!--Расположение: <верх страницы>-->
+<div id="adfox_369375115"></div>
+<script>
+if (mob == true) {
+    window.Ya.adfoxCode.createScroll({
+        ownerId: 162070,
+        containerId: 'adfox_369375115',
+        params: {
+            pp: 'g',
+            ps: 'lyw',
+            p2: 'fmdn',
+            puid1: '',
+            puid2: ''
+        }
+    });
+}
+</script><style>
+div#adfox_369375115 > div{
+margin:10px auto;
+}
+</style><!--ADVEND-->
+
+<div class="panel-separator"></div><div class="panel-pane pane-rating-top-content"  >
+  
+      
+  
+  <div class="pane-content">
+    <div class="rating_top_content">
+  <div class="black_area">
+    <a class="title_message" href="/ratings" >Рейтинги</a>
+    <div class="ancors">
+      <a href="#top10">Топ 10</a>
+              <a href="#materials">Материалы</a>
+            <a href="#all_rating">Весь рейтинг</a>
+      <span class="clear"></span>
+    </div>
+  </div>
+
+  <div class="main-image"><img src="http://cdn.forbes.ru/sites/default/files/styles/1160_400/public/rating_400/star_20173_400.png__1501057210__90508.png?itok=aSFdTNId" title="Рейтинг Forbes: главные российские знаменитости — 2017" alt="Рейтинг Forbes: главные российские знаменитости — 2017"></div>
+
+      <div class="methodology"><p>Место в рейтинге обеспечивают три фактора: доходы за год, внимание СМИ и интерес, который звезда вызывает у аудитории в интернете. </p>
+<p><b>Доходы </b></p>
+<p>Мы подсчитали общий объем гонорарных выплат, которые производились в адрес того или иного артиста, поп-группы, спортсмена, писателя в период с 1 июня 2016 года по 31 мая 2017 года. Распределение этих доходов между самой звездой и продюсерами и агентами мы не учитывали. Принимали во внимание только доходы, полученные артистом (поп-группой, спортсменом, писателем и т. д.) за счет эксплуатации своего таланта. Приведенные в рейтинге цифры — экспертная оценка, основанная на анализе данных, предоставленных самими участниками списка и независимыми аналитиками, а также сведений о тиражах музыкальных альбомов и книг, призовом фонде турниров, рекламных контрактах, гастрольном графике артистов.</p>
+<p><b>Внимание СМИ </b></p>
+<p>Для подсчета упоминаний в прессе и на телевидении мы пользуемся услугами агентства «Медиалогия». Эксперты «Медиалогии» посчитали для нас статьи и передачи, в которых упоминались кандидаты в список Forbes в период с 1 июня 2016 года по 31 мая 2017 года. Данные представлены по 151 федеральному СМИ, включая газеты «Аргументы и факты», «Московский комсомолец», «Комсомольская правда», «Коммерсантъ», «Ведомости» и др., интернет-издания и радио, по 77 глянцевым журналам, включая «7 дней», Cosmopolitan, ELLE, Esquire, FHM, GQ, OK!, Star Hit, Hello, Vogue, «Антенна-телесемь», «Лиза» и др., и по 12 телевизионным каналам: Первый канал, НТВ, Россия-1, ТВЦ и Рен ТВ, «Дождь», РБК, «5 канал», ОТР, МТРК «Мир», Life. </p>
+<p><b>Интерес аудитории</b> </p>
+<p>Мы учитывали, сколько раз за прошедший год (с 1 июня 2016 года по 31 мая 2017 года) пользователи интернета запрашивали информацию об участниках нашего списка в поисковом сервисе «Яндекс». Подсчеты специально для Forbes проводили специалисты «Яндекса».</p>
+
+<div class="mldr_tooltip_content">
+  </div>
+<!--mldr_tooltip_content-end-->
+</div>
+    <div class="methodology_show">Методология</div>
+  
+  <a name="top10"></a>
+  <div class="top10">
+    <div class="title">Топ 10</div>
+    <div class="years">
+      <div class="years_in" style="min-width:624px">
+      <a href="/rating/348311-reyting-forbes-glavnye-rossiyskie-znamenitosti-2017#top10">2017</a> <a href="/rating/reiting-forbes-glavnye-rossiiskie-znamenitosti-2016/2016#top10">2016</a> <a href="/rating/50-glavnykh-rossiiskikh-znamenitostei-2015-reiting-forbes/2015#top10">2015</a> <a href="/rating/50-glavnykh-rossiiskikh-znamenitostei-2014-reiting-forbes/2014#top10">2014</a> <a href="/rating/50-glavnyh-rossiiskih-znamenitostei-2013-reiting-forbes/2013#top10">2013</a> <a href="/rating/reiting-zvezd/2012#top10">2012</a> <a href="/rating/50-zvezd-2011/2011#top10">2011</a> <a href="/rating/50-zvezd/2010#top10">2010</a> <a href="/rating/50-zvezd/2009#top10">2009</a> <a href="/rating/50-zvezd/2008#top10">2008</a> <a href="/rating/50-zvezd/2007#top10">2007</a> <a href="/rating/50-zvezd/2006#top10">2006</a> <a href="/rating/50-zvezd/2005#top10">2005</a>       </div>
+    </div>
+    <div class="items">
+      
+                <a class="item" href="/profile/aleksandr-ovechkin?from_rating=348311" >
+          <img src="http://cdn.forbes.ru/sites/default/files/styles/225_225/public/forbes_import/ov/ovechkin0361.jpg?itok=NcX5nm2v" title="Александр Овечкин" alt="Александр Овечкин" />
+          <div class="value">$ 14 млн</div>
+          <div class="item_title">Александр Овечкин</div>
+        </a>
+      
+                <a class="item" href="/profile/filipp-kirkorov?from_rating=348311" >
+          <img src="http://cdn.forbes.ru/sites/default/files/styles/225_225/public/forbes_import/04/04-tass_14876237_1.jpg?itok=v9j3IcA_" title="Филипп Киркоров" alt="Филипп Киркоров" />
+          <div class="value">$ 7.4 млн</div>
+          <div class="item_title">Филипп Киркоров</div>
+        </a>
+      
+                <a class="item" href="/profile/grigorii-leps?from_rating=348311" >
+          <img src="http://cdn.forbes.ru/sites/default/files/styles/225_225/public/forbes_import/02/02-rian_02873884.hr_.ru__0.jpg?itok=d1a48iUA" title="Григорий Лепс" alt="Григорий Лепс" />
+          <div class="value">$ 6 млн</div>
+          <div class="item_title">Григорий Лепс</div>
+        </a>
+      
+                <a class="item" href="/profile/-timati?from_rating=348311" >
+          <img src="http://cdn.forbes.ru/sites/default/files/styles/225_225/public/forbes_import/08/08-tass_16030036_0.jpg?itok=jpK-_lpk" title="Тимати" alt="Тимати" />
+          <div class="value">$ 6.6 млн</div>
+          <div class="item_title">Тимати</div>
+        </a>
+      
+                <a class="item" href="/profile/dima-bilan?from_rating=348311" >
+          <img src="http://cdn.forbes.ru/sites/default/files/styles/225_225/public/forbes_import/13/13-2704_0.jpg?itok=pBwWf57q" title="Дима Билан" alt="Дима Билан" />
+          <div class="value">$ 6 млн</div>
+          <div class="item_title">Дима Билан</div>
+        </a>
+      
+                <a class="item" href="/profile/evgenii-malkin?from_rating=348311" >
+          <img src="http://cdn.forbes.ru/sites/default/files/styles/225_225/public/forbes_import/ta/tass_3619587.jpg?itok=vZ2EXrFY" title="Евгений Малкин" alt="Евгений Малкин" />
+          <div class="value">$ 9.5 млн</div>
+          <div class="item_title">Евгений Малкин</div>
+        </a>
+      
+                <a class="item" href="/profile/324975-krid?from_rating=348311" >
+          <img src="http://cdn.forbes.ru/sites/default/files/styles/225_225/public/forbes_import/01/01-tass_14854078_1.jpg?itok=4a7c9CaB" title="Егор Крид" alt="Егор Крид" />
+          <div class="value">$ 4 млн</div>
+          <div class="item_title">Егор Крид</div>
+        </a>
+      
+                <a class="item" href="/profile/348297-sergey-bobrovskiy?from_rating=348311" >
+          <img src="http://cdn.forbes.ru/sites/default/files/styles/225_225/public/profile/1-tass_15512265.jpg__1500986707__39411.jpg?itok=fLc7miFe" title="Сергей Бобровский" alt="Сергей Бобровский" />
+          <div class="value">$ 8.5 млн</div>
+          <div class="item_title">Сергей Бобровский</div>
+        </a>
+      
+                <a class="item" href="/profile/263373-netrebko?from_rating=348311" >
+          <img src="http://cdn.forbes.ru/sites/default/files/styles/225_225/public/forbes_import/ta/tass_10292018.jpg?itok=kXiW4plS" title="Анна Нетребко" alt="Анна Нетребко" />
+          <div class="value">$ 7.5 млн</div>
+          <div class="item_title">Анна Нетребко</div>
+        </a>
+      
+                <a class="item" href="/profile/kseniya-sobchak?from_rating=348311" >
+          <img src="http://cdn.forbes.ru/sites/default/files/styles/225_225/public/forbes_import/15/15-img_4168_0_0.jpg?itok=jws3kAfi" title="Ксения Собчак" alt="Ксения Собчак" />
+          <div class="value">$ 2.1 млн</div>
+          <div class="item_title">Ксения Собчак</div>
+        </a>
+            <div class="clear"></div>
+    </div>
+  </div>
+  <div class="top10-to-all">
+    <a href="#all_rating">Посмотреть весь рейтинг</a>
+  </div>
+
+
+  <div class="other_material_title"><a name="materials"></a>Материалы</div>
+
+  <div class="main-section-list">
+    <div class="block-href-material">
+      
+          <div class="item-material ">
+            <div class="pic-material">
+              <a href="/biznes/348283-shnurov-v-intervyu-sobchak-dlya-forbes-s-tochki-zreniya-deneg-mne-nado-idti-vo-vlast"><img src="http://cdn.forbes.ru/sites/default/files/styles/220_150/public/story_images/s_140_print1.jpg__1500897813__16565.jpg?itok=Oxfv0y_4"  alt=""></a>
+            </div>
+            <div class="date-material">
+              <div class="section">
+                                  <div class="field-content">
+                    <a href="/biznes">Бизнес</a>
+                  </div>
+                              </div>
+              <div class="date">25.07.2017 <span>07:03</span></div>
+            </div>
+            <a class="href-material" href="/biznes/348283-shnurov-v-intervyu-sobchak-dlya-forbes-s-tochki-zreniya-deneg-mne-nado-idti-vo-vlast"><span class="field-content">Шнуров в интервью Собчак для Forbes: «С точки зрения денег мне надо идти во власть, это кратчайший путь»</span></a>
+            <div class="author-material">
+              <a href="/"></a>    </div>
+          </div>
+
+      
+          <div class="item-material ">
+            <div class="pic-material">
+              <a href="/biznes/347415-kartina-maslom-pomeshaet-li-konflikt-na-ukraine-semkam-likvidacii"><img src="http://cdn.forbes.ru/sites/default/files/styles/220_150/public/story_images/tass_1164669_copy.jpg__1499261819__14362.jpg?itok=gCGM_wuS"  alt=""></a>
+            </div>
+            <div class="date-material">
+              <div class="section">
+                                  <div class="field-content">
+                    <a href="/biznes">Бизнес</a>
+                  </div>
+                              </div>
+              <div class="date">05.07.2017 <span>17:21</span></div>
+            </div>
+            <a class="href-material" href="/biznes/347415-kartina-maslom-pomeshaet-li-konflikt-na-ukraine-semkam-likvidacii"><span class="field-content">Картина маслом: помешает ли конфликт на Украине съемкам «Ликвидации»</span></a>
+            <div class="author-material">
+              <a href="/"></a>    </div>
+          </div>
+
+      
+          <div class="item-material ">
+            <div class="pic-material">
+              <a href="/forbeslife/sport-i-zdorove/325431-aleksandr-ovechkin-putin-khorosho-igraet-v-khokkei"><img src="http://cdn.forbes.ru/sites/default/files/styles/220_150/public/forbes_import/ov/ovechkin0361_0.jpg?itok=T2IqvW5k"  alt=""></a>
+            </div>
+            <div class="date-material">
+              <div class="section">
+                                  <div class="field-content">
+                    <a href="/forbeslife">ForbesLife</a>
+                  </div>
+                              </div>
+              <div class="date">25.07.2016 <span>08:00</span></div>
+            </div>
+            <a class="href-material" href="/forbeslife/sport-i-zdorove/325431-aleksandr-ovechkin-putin-khorosho-igraet-v-khokkei"><span class="field-content">Александр Овечкин: «Путин хорошо играет в хоккей»</span></a>
+            <div class="author-material">
+              <a href="/"></a>    </div>
+          </div>
+
+      
+          <div class="item-material ">
+            <div class="pic-material">
+              <a href="/forbeslife/sport-i-zdorove/325441-aleksandr-ovechkin-velikolepnaya-vosmerka"><img src="http://cdn.forbes.ru/sites/default/files/styles/220_150/public/forbes_import/ov/ovechkin0684.jpg?itok=6bB9sOAD"  alt=""></a>
+            </div>
+            <div class="date-material">
+              <div class="section">
+                                  <div class="field-content">
+                    <a href="/forbeslife">ForbesLife</a>
+                  </div>
+                              </div>
+              <div class="date">22.07.2016 <span>13:26</span></div>
+            </div>
+            <a class="href-material" href="/forbeslife/sport-i-zdorove/325441-aleksandr-ovechkin-velikolepnaya-vosmerka"><span class="field-content">Александр Овечкин: великолепная "восьмерка"</span></a>
+            <div class="author-material">
+              <a href="/"></a>    </div>
+          </div>
+
+      
+          <div class="item-material ">
+            <div class="pic-material">
+              <a href="/forbeslife-photogallery/dosug/316449-biznes-bez-shou-vo-chto-investiruyut-rossiiskie-zvezdy"><img src="http://cdn.forbes.ru/sites/default/files/styles/220_150/public/forbes_import/12/12-8969_0.jpg?itok=lFT6MGVP"  alt=""></a>
+            </div>
+            <div class="date-material">
+              <div class="section">
+                                  <div class="field-content">
+                    <a href="/forbeslife">ForbesLife</a>
+                  </div>
+                              </div>
+              <div class="date">25.03.2016 <span>16:38</span></div>
+            </div>
+            <a class="href-material" href="/forbeslife-photogallery/dosug/316449-biznes-bez-shou-vo-chto-investiruyut-rossiiskie-zvezdy"><span class="field-content">Бизнес без шоу: во что инвестируют российские звезды</span></a>
+            <div class="author-material">
+              <a href="/"></a>    </div>
+          </div>
+
+      
+          <!--div class="load_more" data-tid="39677" data-pagenumber="1" data-forsection="1">
+            <div>Показать больше</div><div class="pic"></div>
+          </div-->
+    </div>
+    <div class="block-bnr-in-text">
+      <div class="bn">
+        <!--ADVSTART-->
+<!-- 300х600 справа вверху -->
+<!--places 300_600_top --><!--AdFox START-->
+<!--axelspringer-->
+<!--Площадка: Forbes / * / *-->
+<!--Тип баннера: 240x400js-->
+<!--Расположение: <низ страницы>-->
+<div id="adfox_1396238100" data-banner-type="top_300"></div>
+<script>
+var idBanBlock = '#adfox_1396238100';
+if (mob == false) {
+    window.Ya.adfoxCode.create({
+        ownerId: 162070,
+        containerId: 'adfox_1396238100',
+        params: {
+            pp: 'i',
+            ps: 'lyw',
+            p2: 'eiti',
+            puid1: '',
+            puid2: '',
+            pk: '',
+            pke: '1'
+        },
+        onRender: function() {
+                    jQuery(''+idBanBlock).parents('.block-bnr-in-text').next().css('width', '');
+                    jQuery(''+idBanBlock).parents('.block-bnr-in-text').css('width', '').removeClass('min-height-false');
+        },
+        onStub: function() {
+                    jQuery(''+idBanBlock).parents('.block-bnr-in-text').next().css('width', '89%');
+                    jQuery(''+idBanBlock).parents('.block-bnr-in-text').css('width', '0').addClass('min-height-false');
+        },
+        onError: function() {
+                    jQuery(''+idBanBlock).parents('.block-bnr-in-text').next().css('width', '89%');
+                    jQuery(''+idBanBlock).parents('.block-bnr-in-text').css('width', '0').addClass('min-height-false');
+        }
+    });
+} 
+</script><!--ADVEND-->
+
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-rating-content"  >
+  
+      
+  
+  <div class="pane-content">
+    <a name="all_rating"></a>
+<div class="rating-table">
+  <div class="title">Весь рейтинг</div>
+  <div class="years">
+    <div class="years_in" style="min-width:624px">
+    <a href="/rating/348311-reyting-forbes-glavnye-rossiyskie-znamenitosti-2017#all_rating">2017</a> <a href="/rating/reiting-forbes-glavnye-rossiiskie-znamenitosti-2016/2016#all_rating">2016</a> <a href="/rating/50-glavnykh-rossiiskikh-znamenitostei-2015-reiting-forbes/2015#all_rating">2015</a> <a href="/rating/50-glavnykh-rossiiskikh-znamenitostei-2014-reiting-forbes/2014#all_rating">2014</a> <a href="/rating/50-glavnyh-rossiiskih-znamenitostei-2013-reiting-forbes/2013#all_rating">2013</a> <a href="/rating/reiting-zvezd/2012#all_rating">2012</a> <a href="/rating/50-zvezd-2011/2011#all_rating">2011</a> <a href="/rating/50-zvezd/2010#all_rating">2010</a> <a href="/rating/50-zvezd/2009#all_rating">2009</a> <a href="/rating/50-zvezd/2008#all_rating">2008</a> <a href="/rating/50-zvezd/2007#all_rating">2007</a> <a href="/rating/50-zvezd/2006#all_rating">2006</a> <a href="/rating/50-zvezd/2005#all_rating">2005</a>     </div>
+  </div>
+
+
+<table class="common_rating_list">
+  <thead><tr>
+    <th>Место</th>
+
+                      <th class="before_photo">Изменение позиции за год  </th>
+                                        
+
+    <th class="photo_column">Имя</th>
+
+            
+                            <th>Сфера деятельности  </th>
+                <th>доходы $ млн</th>
+                <th>Упоминания в СМИ/ТВ  </th>
+                <th>Запросы в Яндексе  </th>
+                <th>Итоговый балл  </th>
+            </tr></thead>
+  <tbody>
+              
+      <tr class=" line_1">
+        <td>1</td>
+
+        <td class="change_up before_photo">+4</td><td class="photo_column">
+  <div class="foto"><a href="/profile/aleksandr-ovechkin?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/ov/ovechkin0361.jpg?itok=ADkkSCjJ" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/aleksandr-ovechkin?from_rating=348311"
+    >Александр Овечкин</a>
+
+                                  </td>
+<td class="">Хоккей</td><td class="">14</td><td class="">5502</td><td class="">643290</td><td class="">67.96</td>      </tr>
+          
+      <tr class=" line_2">
+        <td>2</td>
+
+        <td class="change_up before_photo">+2</td><td class="photo_column">
+  <div class="foto"><a href="/profile/filipp-kirkorov?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/04/04-tass_14876237_1.jpg?itok=ux6sSeNA" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/filipp-kirkorov?from_rating=348311"
+    >Филипп Киркоров</a>
+
+                                  </td>
+<td class="">Поп-музыка</td><td class="">7.4</td><td class="">9091</td><td class="">5393640</td><td class="">61.06</td>      </tr>
+          
+      <tr class=" line_3">
+        <td>3</td>
+
+        <td class="change_down before_photo">-1</td><td class="photo_column">
+  <div class="foto"><a href="/profile/grigorii-leps?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/02/02-rian_02873884.hr_.ru__0.jpg?itok=_vXv0B9Y" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/grigorii-leps?from_rating=348311"
+    >Григорий Лепс</a>
+
+                                  </td>
+<td class="">Поп-музыка</td><td class="">6</td><td class="">3216</td><td class="">11544800</td><td class="">52.8</td>      </tr>
+          
+      <tr class=" line_4">
+        <td>4</td>
+
+        <td class="change_up before_photo">+7</td><td class="photo_column">
+  <div class="foto"><a href="/profile/-timati?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/08/08-tass_16030036_0.jpg?itok=mTBdOcm7" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/-timati?from_rating=348311"
+    >Тимати</a>
+
+                                  </td>
+<td class="">Поп-музыка</td><td class="">6.6</td><td class="">2409</td><td class="">8789330</td><td class="">48.5</td>      </tr>
+          
+      <tr class=" line_5">
+        <td>5</td>
+
+        <td class="change_up before_photo">+8</td><td class="photo_column">
+  <div class="foto"><a href="/profile/dima-bilan?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/13/13-2704_0.jpg?itok=OHN5nxdY" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/dima-bilan?from_rating=348311"
+    >Дима Билан</a>
+
+                                  </td>
+<td class="">Поп-музыка</td><td class="">6</td><td class="">5311</td><td class="">5128670</td><td class="">45.24</td>      </tr>
+          
+      <tr class=" line_6">
+        <td>6</td>
+
+        <td class="change_up before_photo">+4</td><td class="photo_column">
+  <div class="foto"><a href="/profile/evgenii-malkin?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/ta/tass_3619587.jpg?itok=9aBvtvFZ" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/evgenii-malkin?from_rating=348311"
+    >Евгений Малкин</a>
+
+                                  </td>
+<td class="">Хоккей</td><td class="">9.5</td><td class="">3339</td><td class="">240172</td><td class="">44.63</td>      </tr>
+          
+      <tr class=" line_7">
+        <td>7</td>
+
+        <td class="change_up before_photo">+1</td><td class="photo_column">
+  <div class="foto"><a href="/profile/324975-krid?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/01/01-tass_14854078_1.jpg?itok=M5gWH5ol" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/324975-krid?from_rating=348311"
+    >Егор Крид</a>
+
+                                  </td>
+<td class="">Поп-музыка</td><td class="">4</td><td class="">1309</td><td class="">10632100</td><td class="">39.38</td>      </tr>
+          
+      <tr class=" line_8">
+        <td>8</td>
+
+        <td class=" before_photo">new</td><td class="photo_column">
+  <div class="foto"><a href="/profile/348297-sergey-bobrovskiy?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/profile/1-tass_15512265.jpg__1500986707__39411.jpg?itok=OQe5T2WJ" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/348297-sergey-bobrovskiy?from_rating=348311"
+    >Сергей Бобровский</a>
+
+                                  </td>
+<td class="">Хоккей</td><td class="">8.5</td><td class="">2176</td><td class="">349384</td><td class="">38.92</td>      </tr>
+          
+      <tr class=" line_9">
+        <td>9</td>
+
+        <td class="change_up before_photo">+20</td><td class="photo_column">
+  <div class="foto"><a href="/profile/263373-netrebko?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/ta/tass_10292018.jpg?itok=WgIvgQwP" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/263373-netrebko?from_rating=348311"
+    >Анна Нетребко</a>
+
+                                  </td>
+<td class="">Классическая музыка</td><td class="">7.5</td><td class="">1651</td><td class="">580527</td><td class="">38.89</td>      </tr>
+          
+      <tr class=" line_10">
+        <td>10</td>
+
+        <td class="change_up before_photo">+5</td><td class="photo_column">
+  <div class="foto"><a href="/profile/kseniya-sobchak?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/15/15-img_4168_0_0.jpg?itok=QuHUMTPt" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/kseniya-sobchak?from_rating=348311"
+    >Ксения Собчак</a>
+
+                                  </td>
+<td class="">Телевидение</td><td class="">2.1</td><td class="">8752</td><td class="">5510739</td><td class="">37.48</td>      </tr>
+          
+      <tr class=" line_11">
+        <td>11</td>
+
+        <td class="change_up before_photo">+15</td><td class="photo_column">
+  <div class="foto"><a href="/profile/324999-bi-2?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/ta/tass_13450513.jpg?itok=XJxwv7Z2" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/324999-bi-2?from_rating=348311"
+    >Би-2</a>
+
+                                  </td>
+<td class="">Рок-музыка</td><td class="">5.7</td><td class="">1458</td><td class="">5059234</td><td class="">36.25</td>      </tr>
+          
+      <tr class=" line_12">
+        <td>12</td>
+
+        <td class="change_down before_photo">-9</td><td class="photo_column">
+  <div class="foto"><a href="/profile/sergei-shnurov?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/01/01-tass_16489142_1.jpg?itok=l0weFUx7" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/sergei-shnurov?from_rating=348311"
+    >Сергей Шнуров/Ленинград</a>
+
+                                  </td>
+<td class="">Рок-музыка</td><td class="">5</td><td class="">5752</td><td class="">2868740</td><td class="">35.61</td>      </tr>
+          
+      <tr class=" line_13">
+        <td>13</td>
+
+        <td class="change_up before_photo">+4</td><td class="photo_column">
+  <div class="foto"><a href="/profile/-basta?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/17/17-basta_2_0.jpg?itok=EwsYpAvo" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/-basta?from_rating=348311"
+    >Баста</a>
+
+                                  </td>
+<td class="">Рэп</td><td class="">2.6</td><td class="">1723</td><td class="">10484800</td><td class="">33.2</td>      </tr>
+          
+      <tr class=" line_14">
+        <td>14</td>
+
+        <td class="change_up before_photo">+18</td><td class="photo_column">
+  <div class="foto"><a href="/profile/324985-buzova?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/ta/tass_8540839.jpg?itok=UIdS6XOo" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/324985-buzova?from_rating=348311"
+    >Ольга Бузова</a>
+
+                                  </td>
+<td class="">Телевидение</td><td class="">2.2</td><td class="">16278</td><td class="">3869670</td><td class="">31.64</td>      </tr>
+          
+      <tr class=" line_15">
+        <td>15</td>
+
+        <td class="change_down before_photo">-1</td><td class="photo_column">
+  <div class="foto"><a href="/profile/nikolai-baskov?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/14/14-t6y5581_0_0.jpg?itok=mbt3tSKL" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/nikolai-baskov?from_rating=348311"
+    >Николай Басков</a>
+
+                                  </td>
+<td class="">Поп-музыка</td><td class="">4.3</td><td class="">2337</td><td class="">2689350</td><td class="">30.55</td>      </tr>
+          
+      <tr class=" line_16">
+        <td>16</td>
+
+        <td class=" before_photo">new</td><td class="photo_column">
+  <div class="foto"><a href="/profile/263267-kokorin?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/ta/tass_7643611.jpg?itok=Q_aqalcx" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/263267-kokorin?from_rating=348311"
+    >Александр Кокорин</a>
+
+                                  </td>
+<td class="">Футбол</td><td class="">4</td><td class="">7511</td><td class="">828985</td><td class="">28.5</td>      </tr>
+          
+      <tr class=" line_17">
+        <td>17</td>
+
+        <td class="change_down before_photo">-8</td><td class="photo_column">
+  <div class="foto"><a href="/profile/-zemfira?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/09/09-tass_7919009_0.jpg?itok=5Hk52vo1" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/-zemfira?from_rating=348311"
+    >Земфира</a>
+
+                                  </td>
+<td class="">Рок-музыка</td><td class="">5</td><td class="">1171</td><td class="">2611820</td><td class="">28.43</td>      </tr>
+          
+      <tr class=" line_18">
+        <td>18</td>
+
+        <td class=" before_photo">new</td><td class="photo_column">
+  <div class="foto"><a href="/profile/maksim-galkin?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/ta/tass_3250221.jpg?itok=o2T0qIay" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/maksim-galkin?from_rating=348311"
+    >Максим Галкин</a>
+
+                                  </td>
+<td class="">Телевидение</td><td class="">4.8</td><td class="">3097</td><td class="">953212</td><td class="">28.24</td>      </tr>
+          
+      <tr class=" line_19">
+        <td>19</td>
+
+        <td class="change_down before_photo">-18</td><td class="photo_column">
+  <div class="foto"><a href="/profile/mariya-sharapova?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/ta/tass_14754313.jpg?itok=3jzRuE16" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/mariya-sharapova?from_rating=348311"
+    >Мария Шарапова</a>
+
+                                  </td>
+<td class="">Теннис</td><td class="">3</td><td class="">7484</td><td class="">746638</td><td class="">27</td>      </tr>
+          
+      <tr class=" line_20">
+        <td>20</td>
+
+        <td class="change_up before_photo">+1</td><td class="photo_column">
+  <div class="foto"><a href="/profile/stas-mihailov?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/mi/mikh.jpg?itok=Yk2kfbAf" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/stas-mihailov?from_rating=348311"
+    >Стас Михайлов</a>
+
+                                  </td>
+<td class="">Поп-музыка</td><td class="">3.3</td><td class="">1444</td><td class="">4327880</td><td class="">25.54</td>      </tr>
+          
+      <tr class="hidden line_21">
+        <td>21</td>
+
+        <td class="change_down before_photo">-3</td><td class="photo_column">
+  <div class="foto"><a href="/profile/ivan-urgant?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/18/18-tass_10078005_0.jpg?itok=V0nyuz5W" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/ivan-urgant?from_rating=348311"
+    >Иван Ургант</a>
+
+                                  </td>
+<td class="">Телевидение</td><td class="">2.1</td><td class="">3223</td><td class="">4035080</td><td class="">24.18</td>      </tr>
+          
+      <tr class="hidden line_22">
+        <td>22</td>
+
+        <td class="change_down before_photo">-10</td><td class="photo_column">
+  <div class="foto"><a href="/profile/293905-gagarina?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/10/10-2423_0.jpg?itok=cdw9-vWk" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/293905-gagarina?from_rating=348311"
+    >Полина Гагарина</a>
+
+                                  </td>
+<td class="">Поп-музыка</td><td class="">1.9</td><td class="">3638</td><td class="">4035850</td><td class="">23.75</td>      </tr>
+          
+      <tr class="hidden line_23">
+        <td>23</td>
+
+        <td class="change_down before_photo">-4</td><td class="photo_column">
+  <div class="foto"><a href="/profile/293975-nagiev?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/1-/1-nagiev_0.jpg?itok=UBOLZN-p" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/293975-nagiev?from_rating=348311"
+    >Дмитрий Нагиев </a>
+
+                                  </td>
+<td class="">Телевидение</td><td class="">3</td><td class="">2045</td><td class="">3715700</td><td class="">23.43</td>      </tr>
+          
+      <tr class="hidden line_24">
+        <td>24</td>
+
+        <td class="change_up before_photo">+19</td><td class="photo_column">
+  <div class="foto"><a href="/profile/263417-sheyk?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/ta/tass_15420953.jpg?itok=G6dgshMz" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/263417-sheyk?from_rating=348311"
+    >Ирина Шейк</a>
+
+                                  </td>
+<td class="">Модельный бизнес</td><td class="">3</td><td class="">1888</td><td class="">1116977</td><td class="">21.91</td>      </tr>
+          
+      <tr class="hidden line_25">
+        <td>25</td>
+
+        <td class="change_down before_photo">-19</td><td class="photo_column">
+  <div class="foto"><a href="/profile/natalya-vodyanova?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/06/06-tass_12341384_0.jpg?itok=El8eiFnR" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/natalya-vodyanova?from_rating=348311"
+    >Наталья Водянова</a>
+
+                                  </td>
+<td class="">Модельный бизнес</td><td class="">2.3</td><td class="">1817</td><td class="">610391</td><td class="">21.85</td>      </tr>
+          
+      <tr class="hidden line_26">
+        <td>26</td>
+
+        <td class="change_up before_photo">+13</td><td class="photo_column">
+  <div class="foto"><a href="/profile/fedor-bondarchuk?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/2-/2-tass_15980238_0.jpg?itok=ONBxsYLa" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/fedor-bondarchuk?from_rating=348311"
+    >Федор Бондарчук</a>
+
+                                  </td>
+<td class="">Кино</td><td class="">1.3</td><td class="">4818</td><td class="">1257292</td><td class="">21.32</td>      </tr>
+          
+      <tr class="hidden line_27">
+        <td>27</td>
+
+        <td class="change_up before_photo">+4</td><td class="photo_column">
+  <div class="foto"><a href="/profile/igor-akinfeev?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/ta/tass_15767923.jpg?itok=9aTL5A7m" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/igor-akinfeev?from_rating=348311"
+    >Игорь Акинфеев</a>
+
+                                  </td>
+<td class="">Футбол</td><td class="">3.2</td><td class="">4998</td><td class="">349619</td><td class="">20.16</td>      </tr>
+          
+      <tr class="hidden line_28">
+        <td>28</td>
+
+        <td class="change_up before_photo">+8</td><td class="photo_column">
+  <div class="foto"><a href="/profile/evgenii-plyushchenko?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/ta/tass_13178483.jpg?itok=p3WQQhve" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/evgenii-plyushchenko?from_rating=348311"
+    >Евгений Плющенко</a>
+
+                                  </td>
+<td class="">Фигурное катание</td><td class="">3.2</td><td class="">1849</td><td class="">478525</td><td class="">19.99</td>      </tr>
+          
+      <tr class="hidden line_29">
+        <td>29</td>
+
+        <td class="change_down before_photo">-6</td><td class="photo_column">
+  <div class="foto"><a href="/profile/valerii-meladze?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/09/09-3304_0.jpg?itok=oV2xT7nR" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/valerii-meladze?from_rating=348311"
+    >Валерий Меладзе</a>
+
+                                  </td>
+<td class="">Поп-музыка</td><td class="">2.5</td><td class="">1804</td><td class="">2844473</td><td class="">19.89</td>      </tr>
+          
+      <tr class="hidden line_30">
+        <td>30</td>
+
+        <td class=" before_photo">=</td><td class="photo_column">
+  <div class="foto"><a href="/profile/andrei-malahov?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/ta/tass_11592463.jpg?itok=8XbJRwQ3" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/andrei-malahov?from_rating=348311"
+    >Андрей Малахов</a>
+
+                                  </td>
+<td class="">Телевидение</td><td class="">1.2</td><td class="">4360</td><td class="">2868480</td><td class="">19.14</td>      </tr>
+          
+      <tr class="hidden line_31">
+        <td>31</td>
+
+        <td class="change_down before_photo">-24</td><td class="photo_column">
+  <div class="foto"><a href="/profile/sergei-lazarev?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/ta/tass_15615218_0.jpg?itok=gVyi9U5V" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/sergei-lazarev?from_rating=348311"
+    >Сергей Лазарев</a>
+
+                                  </td>
+<td class="">Поп-музыка</td><td class="">1</td><td class="">3233</td><td class="">4572890</td><td class="">18.29</td>      </tr>
+          
+      <tr class="hidden line_32">
+        <td>32</td>
+
+        <td class="change_down before_photo">-5</td><td class="photo_column">
+  <div class="foto"><a href="/profile/valerii-gergiev?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/ri/rian_01461742.lr_.ru_copy.jpg?itok=CkZrTC0R" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/valerii-gergiev?from_rating=348311"
+    >Валерий Гергиев</a>
+
+                                  </td>
+<td class="">Классическая музыка</td><td class="">2.5</td><td class="">3593</td><td class="">156856</td><td class="">17.26</td>      </tr>
+          
+      <tr class="hidden line_33">
+        <td>33</td>
+
+        <td class="change_down before_photo">-13</td><td class="photo_column">
+  <div class="foto"><a href="/profile/-nyusha?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/20/20-rian_02868363.hr_.ru_.jpg?itok=jFKFg-Xa" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/-nyusha?from_rating=348311"
+    >Нюша</a>
+
+                                  </td>
+<td class="">Поп-музыка</td><td class="">1</td><td class="">2971</td><td class="">4014819</td><td class="">16.76</td>      </tr>
+          
+      <tr class="hidden line_34">
+        <td>34</td>
+
+        <td class="change_down before_photo">-18</td><td class="photo_column">
+  <div class="foto"><a href="/profile/nikita-mihalkov?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/9-/9-tass_11286177_0.jpg?itok=fgVqOKd8" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/nikita-mihalkov?from_rating=348311"
+    >Никита Михалков</a>
+
+                                  </td>
+<td class="">Кино</td><td class="">0.35</td><td class="">7251</td><td class="">1529744</td><td class="">16.58</td>      </tr>
+          
+      <tr class="hidden line_35">
+        <td>35</td>
+
+        <td class=" before_photo">new</td><td class="photo_column">
+  <div class="foto"><a href="/profile/348299-sergey-karyakin?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/profile/zz-18716049.jpg__1500987683__97381.jpg?itok=Ajj0QmnP" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/348299-sergey-karyakin?from_rating=348311"
+    >Сергей Карякин</a>
+
+                                  </td>
+<td class="">Шахматы</td><td class="">0.6</td><td class="">7346</td><td class="">37873</td><td class="">16.22</td>      </tr>
+          
+      <tr class="hidden line_36">
+        <td>36</td>
+
+        <td class="change_up before_photo">+9</td><td class="photo_column">
+  <div class="foto"><a href="/profile/kristina-orbakaite?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/ta/tass_15801410.jpg?itok=FbTmAoGY" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/kristina-orbakaite?from_rating=348311"
+    >Кристина Орбакайте</a>
+
+                                  </td>
+<td class="">Поп-музыка</td><td class="">1.4</td><td class="">2105</td><td class="">2234456</td><td class="">16.11</td>      </tr>
+          
+      <tr class="hidden line_37">
+        <td>37</td>
+
+        <td class="change_down before_photo">-2</td><td class="photo_column">
+  <div class="foto"><a href="/profile/fedor-emelyanenko?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/ta/tass_15326911.jpg?itok=LLUH2m_E" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/fedor-emelyanenko?from_rating=348311"
+    >Федор Емельяненко</a>
+
+                                  </td>
+<td class="">Бои без правил</td><td class="">2</td><td class="">4685</td><td class="">1277426</td><td class="">15.11</td>      </tr>
+          
+      <tr class="hidden line_38">
+        <td>38</td>
+
+        <td class="change_up before_photo">+10</td><td class="photo_column">
+  <div class="foto"><a href="/profile/konstantin-habenskii?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/7-/7-konstantin-khabensky-0904_lr_0_0.jpg?itok=hipiXfxO" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/konstantin-habenskii?from_rating=348311"
+    >Константин Хабенский</a>
+
+                                  </td>
+<td class="">Кино</td><td class="">1</td><td class="">2996</td><td class="">867816</td><td class="">15.06</td>      </tr>
+          
+      <tr class="hidden line_39">
+        <td>39</td>
+
+        <td class=" before_photo">new</td><td class="photo_column">
+  <div class="foto"><a href="/profile/348301-kirill-serebrennikov?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/profile/kirill_0.jpg__1500987770__66338.jpg?itok=vPeYaTs1" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/348301-kirill-serebrennikov?from_rating=348311"
+    >Кирилл Серебренников</a>
+
+                                  </td>
+<td class="">Театр</td><td class="">0.5</td><td class="">5109</td><td class="">216876</td><td class="">15</td>      </tr>
+          
+      <tr class="hidden line_40">
+        <td>40</td>
+
+        <td class="change_down before_photo">-15</td><td class="photo_column">
+  <div class="foto"><a href="/profile/-serebro?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/ta/tass_16032347.jpg?itok=RNMElvVh" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/-serebro?from_rating=348311"
+    >Serebro Серебро</a>
+
+                                  </td>
+<td class="">Поп-музыка</td><td class="">0.8</td><td class="">1502</td><td class="">4808694</td><td class="">14.49</td>      </tr>
+          
+      <tr class="hidden line_41">
+        <td>41</td>
+
+        <td class=" before_photo">new</td><td class="photo_column">
+  <div class="foto"><a href="/profile/andrei-konchalovskii?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/profile/tass_19576020_copy.jpg__1501086576__12080.jpg?itok=HnTkYCZF" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/andrei-konchalovskii?from_rating=348311"
+    >Андрей Кончаловский</a>
+
+                                  </td>
+<td class="">Кино</td><td class="">0.25</td><td class="">4723</td><td class="">1788568</td><td class="">14.42</td>      </tr>
+          
+      <tr class="hidden line_42">
+        <td>42</td>
+
+        <td class="change_down before_photo">-5</td><td class="photo_column">
+  <div class="foto"><a href="/profile/263407-hodchenkova?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/4-/4-tass_11086961-1.jpg?itok=G_Bfn6N4" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/263407-hodchenkova?from_rating=348311"
+    >Светлана Ходченкова</a>
+
+                                  </td>
+<td class="">Кино</td><td class="">0.9</td><td class="">1803</td><td class="">1633201</td><td class="">13.82</td>      </tr>
+          
+      <tr class="hidden line_43">
+        <td>43</td>
+
+        <td class=" before_photo">new</td><td class="photo_column">
+  <div class="foto"><a href="/profile/348303-sergey-zhukovruki-vverh?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/profile/sergey-jukov.jpg__1500988252__13065.jpg?itok=7ntzBgT8" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/348303-sergey-zhukovruki-vverh?from_rating=348311"
+    >Сергей Жуков/Руки вверх!</a>
+
+                                  </td>
+<td class="">Поп-музыка</td><td class="">1.5</td><td class="">438</td><td class="">3514487</td><td class="">13.64</td>      </tr>
+          
+      <tr class="hidden line_44">
+        <td>44</td>
+
+        <td class=" before_photo">new</td><td class="photo_column">
+  <div class="foto"><a href="/profile/348307-oxxxymiron?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/profile/oxxxymiron.jpg__1500988451__57488.jpg?itok=spY_Tkgw" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/348307-oxxxymiron?from_rating=348311"
+    >Oxxxymiron</a>
+
+                                  </td>
+<td class="">Рэп</td><td class="">1.3</td><td class="">507</td><td class="">3521550</td><td class="">12.98</td>      </tr>
+          
+      <tr class="hidden line_45">
+        <td>45</td>
+
+        <td class=" before_photo">new</td><td class="photo_column">
+  <div class="foto"><a href="/profile/348335-renata-litvinova?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/profile/litvinova.jpg__1500988510__19498.jpg?itok=wuL79LEu" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/348335-renata-litvinova?from_rating=348311"
+    >Рената Литвинова</a>
+
+                                  </td>
+<td class="">Кино</td><td class="">0.6</td><td class="">1960</td><td class="">688754</td><td class="">12.14</td>      </tr>
+          
+      <tr class="hidden line_46">
+        <td>46</td>
+
+        <td class="change_down before_photo">-5</td><td class="photo_column">
+  <div class="foto"><a href="/profile/pavel-volya?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/ta/tass_9932149.jpg?itok=SU912ozc" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/pavel-volya?from_rating=348311"
+    >Павел Воля</a>
+
+                                  </td>
+<td class="">Эстрада</td><td class="">1.2</td><td class="">1192</td><td class="">2018744</td><td class="">11.87</td>      </tr>
+          
+      <tr class="hidden line_47">
+        <td>47</td>
+
+        <td class="change_up before_photo">+3</td><td class="photo_column">
+  <div class="foto"><a href="/profile/294039-tabakov?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/ri/rian_02645869.hr_.ru_.jpg?itok=2Vxu-2SL" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/294039-tabakov?from_rating=348311"
+    >Олег Табаков</a>
+
+                                  </td>
+<td class="">Театр</td><td class="">1.1</td><td class="">2215</td><td class="">307511</td><td class="">11.38</td>      </tr>
+          
+      <tr class="hidden line_48">
+        <td>48</td>
+
+        <td class=" before_photo">new</td><td class="photo_column">
+  <div class="foto"><a href="/profile/263423-mironov?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/ta/tass_6592747.jpg?itok=4qexvwrR" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/263423-mironov?from_rating=348311"
+    >Евгений Миронов </a>
+
+                                  </td>
+<td class="">Кино</td><td class="">0.6</td><td class="">3022</td><td class="">568508</td><td class="">11.12</td>      </tr>
+          
+      <tr class="hidden line_49">
+        <td>49</td>
+
+        <td class="change_down before_photo">-5</td><td class="photo_column">
+  <div class="foto"><a href="/profile/293993-kozlovskiy?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/6-/6-md_ok_danila_589_lr_0_0.jpg?itok=1xxxoxdJ" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/293993-kozlovskiy?from_rating=348311"
+    >Данила Козловский</a>
+
+                                  </td>
+<td class="">Кино</td><td class="">0.4</td><td class="">2333</td><td class="">1319053</td><td class="">10.72</td>      </tr>
+          
+      <tr class="hidden line_50">
+        <td>50</td>
+
+        <td class="change_down before_photo">-1</td><td class="photo_column">
+  <div class="foto"><a href="/profile/324995-mashkov?from_rating=348311"><img src="http://cdn.forbes.ru/sites/default/files/styles/100_100/public/forbes_import/ta/tass_15269818.jpg?itok=b_udlwae" width="100" height="100" alt="" /></a></div>
+  <a class="profile_title" href="/profile/324995-mashkov?from_rating=348311"
+    >Владимир Машков</a>
+
+                                  </td>
+<td class="">Кино</td><td class="">0.6</td><td class="">1052</td><td class="">1893984</td><td class="">9.46</td>      </tr>
+      </tbody>
+</table>
+
+  <div class="show_more_ratings">
+    <div>Показать еще 20</div>
+    <div class="pic"></div>
+  </div>
+
+</div>  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-in-stats-js"  >
+  
+      
+  
+  <div class="pane-content">
+    
+<script type="text/javascript" id="in_stats_348311">
+</script>
+  </div>
+
+  
+  </div>
+<div class="panel-separator"></div><div class="panel-pane pane-custom pane-1"  >
+  
+      
+  
+  <div class="pane-content">
+    <style type="text/css">
+body.page-node-348311 table.common_rating_list.dataTable tbody tr td a.profile_title {
+    display: flex;
+}
+
+body.page-node-350867 table.common_rating_list.dataTable tbody tr td a.profile_title {
+    display: block;
+    clear: both;
+}
+
+body.page-node-350867 table.common_rating_list.dataTable tbody tr td .foto {
+    display: block;
+}
+</style>
+  </div>
+
+  
+  </div>
+  </div>
+
+  
+  </div>
+
+<!--ADVSTART-->
+<!-- Проверочный пиксель -->
+<!--places pixel --><!--AdFox START-->
+<!--axelspringer-->
+<!--Площадка: Forbes / * / *-->
+<!--Тип баннера: 1х1(асинх.код)-->
+<!--Расположение: <низ страницы>-->
+<div id="adfox_1238682914"></div>
+<script>
+if (mob == false) {
+    window.Ya.adfoxCode.createScroll({
+        ownerId: 162070,
+        containerId: 'adfox_1238682914',
+        params: {
+            pp: 'i',
+            ps: 'lyw',
+            p2: 'eplm',
+            puid1: '',
+            puid2: ''
+        }
+    });
+}
+</script><!--ADVEND-->
+
+
+<!-- tns-counter.ru -->
+<script type="text/javascript">
+  (function(win, doc, cb){
+    (win[cb] = win[cb] || []).push(function() {
+      try {
+        tnsCounterforbes_ru = new TNS.TnsCounter({
+          'account':'forbes_ru',
+          'tmsec': 'forbes_total'
+        });
+      } catch(e){}
+    });
+
+    var tnsscript = doc.createElement('script');
+    tnsscript.type = 'text/javascript';
+    tnsscript.async = true;
+    tnsscript.src = ('https:' == doc.location.protocol ? 'https:' : 'http:') +
+    '//www.tns-counter.ru/tcounter.js';
+    var s = doc.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(tnsscript, s);
+  })(window, this.document,'tnscounter_callback');
+</script>
+<noscript>
+  <img src="//www.tns-counter.ru/V13a****forbes_ru/ru/UTF-8/tmsec=forbes_total/" width="0" height="0" alt="" />
+</noscript>
+<!--/ tns-counter.ru -->
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.5&appId=1700610573541605";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+  (function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+      try {
+        w.yaCounter433635 = new Ya.Metrika({
+          id:433635,
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true
+        });
+        if (348311 > 0) {
+          renderInStatPixel(348311);
+        }
+      } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+      s = d.createElement("script"),
+      f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+      d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/433635" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!--LiveInternet counter-->
+<script type="text/javascript"><!--
+  new Image().src = "//counter.yadro.ru/hit?r"+
+  escape(document.referrer)+((typeof(screen)=="undefined")?"":
+  ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+    screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+  ";h"+escape(document.title.substring(0,80))+
+  ";"+Math.random();//--></script>
+<!--/LiveInternet-->
+<!--ADVSTART-->
+<!-- Fullscreen desktop -->
+<!--places fullsceeen --><!--AdFox START-->
+<!--axelspringer-->
+<!--Площадка: Forbes / * / *-->
+<!--Тип баннера: FullScreen-->
+<!--Расположение: <верх страницы>-->
+<div id="adfox_121439790"></div>
+<script>
+if (mob == false) {
+    window.Ya.adfoxCode.create({
+        ownerId: 162070,
+        containerId: 'adfox_121439790',
+        params: {
+            pp: 'g',
+            ps: 'lyw',
+            p2: 'ejzo',
+            puid1: '',
+            puid2: ''
+        }
+    });
+}
+</script><!--ADVEND-->
+
+<!--ADVSTART-->
+<!-- Adbutton(probtn) -->
+<!--places fullsceeen --><script src="https://cdn.probtn.com/showinparent_concat.js"></script><!--ADVEND-->
+
+<!--ADVSTART-->
+<!-- Fullscreen mobile -->
+<!--places fullsceeen --><!--AdFox START-->
+<!--axelspringer-->
+<!--Площадка: Forbes / * / *-->
+<!--Тип баннера: Fullscreen NEW Mobile-->
+<!--Расположение: <верх страницы>-->
+<div id="adfox_69518336"></div>
+<script>
+if (mob == true) {
+    window.Ya.adfoxCode.create({
+        ownerId: 162070,
+        containerId: 'adfox_69518336',
+        params: {
+            pp: 'g',
+            ps: 'lyw',
+            p2: 'fmdr',
+            puid1: '',
+            puid2: ''
+        }
+    });
+}
+</script><!--ADVEND-->
+
+
+<!--ADVSTART-->
+<!-- Rich Media -->
+<!--places rich_media --><!--AdFox START-->
+<!--axelspringer-->
+<!--Площадка: Forbes / * / *-->
+<!--Тип баннера: Rich Media-->
+<!--Расположение: <низ страницы>-->
+<div id="adfox_2019058401"></div>
+<script>
+if (mob == true) {
+    window.Ya.adfoxCode.create({
+        ownerId: 162070,
+        containerId: 'adfox_2019058401',
+        params: {
+            pp: 'i',
+            ps: 'lyw',
+            p2: 'p',
+            puid1: '',
+            puid2: ''
+        }
+    });
+}
+</script><style>
+#adfox_2019058401 > div{
+    display: block;
+    width: 100% !important;
+    margin-left: -10px !important;
+}
+</style><!--ADVEND-->
+
+  </div>
+
+  
+<footer>
+  <div class="footer-top">
+    <div class="footer-top-content">
+      <div class="up-button-page"></div>
+      <div class="subscription-magazine">
+        <img class="img" src="http://cdn.forbes.ru/sites/default/files/styles/202_260/public/anons_covers/_cover_11.jpg__1508429101__65814.jpg?itok=Fn44x_zw" width="100" height="130" alt="Оформите подписку на журнал Forbes" title="Оформите подписку на журнал Forbes">
+        <div class="name">Журнал Forbes</div>
+        <div class="description">Оформите подписку<br>на журнал Forbes.</div>
+        <a class="button-to-subscribe" href="http://www.acmedia.info/distribution/#forbes" target="_blank">Подписаться<span></span></a>
+      </div>
+
+      <div class="iphone-and-ipad">
+        <img class="img" src="http://cdn.forbes.ru/sites/default/files/styles/ipad_184_260/public/anons_covers/_cover_11.jpg__1508429101__65814.jpg?itok=lewaJlIE" width="92" height="130" alt="Цифровые выпуски Forbes" title="Цифровые выпуски Forbes">
+        <div class="name">IPHONE И IPAD</div>
+        <div class="description">Цифровые выпуски<br>для Iphone и Ipad.</div>
+        <a href="https://itunes.apple.com/us/app/forbes-russia-mag/id934323468?mt=8">
+          <img class="img-appstore" src="http://cdn.forbes.ru/sites/all/themes/forbes/img/iphone-and-ipad-logo.svg" alt="Forbes, доступно в AppStore" title="Forbes, доступно в AppStore" width="" height="">
+        </a>
+      </div>
+
+      <div class="block-delivery">
+        <div class="name">Рассылка Forbes.</div>
+        <div class="description">Каждую неделю только самое<br>важное и интересное.</div>
+        <div class="block-delivery-form">
+          <form method="POST" action="https://cp.unisender.com/ru/subscribe?hash=5g8ijyh4sdinwmqsey38q9bjxm7rmbmtudys3no9w6auba61nnjdy" name="subscribtion_form">
+            <input class="subscribe-form-item__control subscribe-form-item__control--input-email tx-button" type="text" name="email" required placeholder="Ваш E-mail" value="">
+            <input class="subscribe-form-item__btn subscribe-form-item__btn--btn-submit sb-button" type="submit" value="Подписаться">
+            <input type="hidden" name="charset" value="UTF-8">
+            <input type="hidden" name="default_list_id" value="7006058">
+            <input type="hidden" name="overwrite" value="2">
+            <input type="hidden" name="is_v5" value="1">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-content">
+      <a href="http://acmgroup.info/" target="_blank">
+        <img class="acmg-logo-footer-content" src="http://cdn.forbes.ru/sites/all/themes/forbes/img/acmh-logo-footer-content.svg">
+      </a>
+
+      <div class="social-block">
+        <a href="http://instagram.com/acmg_official" target="_blank" class="ig"></a>
+        <a href="https://www.facebook.com/acmg.official" target="_blank" class="fb"></a>
+        <a href="https://twitter.com/acmg_official" target="_blank" class="tw"></a>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="acmg-button-footer">
+        <div class="block-choice top">
+          Our Brands
+          <span></span>
+        </div>
+        <div class="block-choice-open" style="display:none;">
+          <table>
+            <tbody><tr>
+              <td>
+                <ul>
+                  <li><a href="http://www.forbes.ru" target="_blank">Forbes</a></li>
+                  <li><a href="http://www.lofficielrussia.ru" target="_blank">L’Officiel</a></li>
+                  <li><a href="http://www.numerorussia.ru" target="_blank">Numero</a></li>
+                  <li><a href="http://portmagazine.ru" target="_blank">Port</a></li>
+                  <li><a href="http://www.sncmedia.ru" target="_blank">SNC</a></li>
+                  <li><a href="http://www.ok-magazine.ru" target="_blank">OK!</a></li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><a href="http://www.golfdigest.ru" target="_blank">GolfDigest</a></li>
+                  <li><a href="http://www.internimagazine.ru" target="_blank">Interni</a></li>
+                  <li><a href="http://www.objekt.ru" target="_blank">Object</a></li>
+                  <!--<li><a href="http://www.exterieursdesign.ru" target="_blank">Exteriours Design</a></li>-->
+                  <li><a href="http://www.forbes.ru" target="_blank">Forbes.ru</a></li>
+                  <li><a href="http://www.ok-magazine.ru" target="_blank">OK–magazine.ru</a></li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><a href="http://www.sncmedia.ru" target="_blank">SNCmedia.ru</a></li>
+                </ul>
+              </td>
+            </tr>
+            </tbody></table>
+          <div class="block-choice in">
+            Our Brands
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="acmg-button-footer">
+        <div class="block-choice top">
+          Companies
+          <span></span>
+        </div>
+        <div class="block-choice-open" style="display:none;">
+          <table>
+            <tbody><tr>
+              <td>
+                <ul>
+                  <li><a href="http://www.artcommedia.ru" target="_blank">ARTCOM Media</a></li>
+                  <li><a href="http://www.acmedia.info" target="_blank">AC Media</a></li>
+                  <li><a href="http://www.acmdigital.ru" target="_blank">ACM Digital</a></li>
+                  <li><a href="http://www.acmgroup.info" target="_blank">A Media</a></li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><a href="http://www.jaloumediagroup.ru" target="_blank">Jalou Media Group Russia</a></li>
+                  <li><a href="http://www.jaloumediagroup.de" target="_blank">Jalou Media Germany</a></li>
+                  <li><a href="http://www.acmgroup.info" target="_blank">A Media Distribution</a></li>
+                  <li><a href="http://www.acmgroup.info" target="_blank">G Media</a></li>
+                </ul>
+              </td>
+            </tr>
+            </tbody></table>
+          <div class="block-choice in">
+            Companies
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="panel-pane pane-custom pane-2"  >
+  
+      
+  
+  <div class="pane-content">
+    <style>
+footer{position: relative;}
+</style>  </div>
+
+  
+  </div>
+
+<div class="panel-pane pane-custom pane-3"  >
+  
+      
+  
+  <div class="pane-content">
+    <style>
+body.page-taxonomy-term-40197 .load_more,
+body.page-taxonomy-term-40097 .main-section-tab,
+body.page-taxonomy-term-40097 .main-section-list{
+display:none;
+}
+</style>  </div>
+
+  
+  </div>
+
+<div class="push_back"></div> <div class="push_warn" style="background-image: url(/sites/all/modules/custom/forbes_push/plugins/content_types/push_subscribe/img/push-icon.png);"> <div class="x" style="background-image: url(/sites/all/modules/custom/forbes_push/plugins/content_types/push_subscribe/img/push-x.png);">Закрыть</div> <div class="title">Уведомление в браузере</div> <div class="note"> Будь в курсе самого главного.<br/> Новости и идеи для бизнеса - <br/> не чаще двух раз в день. </div> <div class="button">Подписаться</div> </div>  <script type="text/javascript" src="http://www.forbes.ru/sites/all/themes/forbes/js/forbes.behaviors.js?oyfoeg"></script>
+  <!-- Запрос на восстановление регистрационной информации -->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3979577209","applicationID":"34632585","transactionName":"bwdVYkRXChJWARAIV1ZNdlVCXwsPGBIFBl1nD1ZYV1EBE2gMCwVdZxReU0FpFABQBw==","queueTime":0,"applicationTime":311,"atts":"Q0BWFAxNGRw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+<!-- check-forbes.ru 1509285594 -->
+</html>
