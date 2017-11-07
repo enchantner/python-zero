@@ -1,0 +1,11 @@
+aiohttp==2.3.2
+async-timeout==2.0.0
+beautifulsoup4==4.6.0
+bs4==0.0.1
+chardet==3.0.4
+lxml==4.1.1
+multidict==3.3.2
+pkg-resources==0.0.0
+telepot==12.4
+urllib3==1.22
+yarl==0.13.0
