@@ -41,6 +41,11 @@ class LentaReader(telepot.aio.helper.ChatHandler):
         return
 
     async def on_chat_message(self, msg):
+
+        if "sticker" in msg:
+            await self.sender.sendSticker(msg["sticker"]["file_id"])
+            return
+
         content_type, chat_type, chat_id = telepot.glance(msg)
         if msg["text"] == "/start":
             await self.sender.sendMessage("Привет! Пришли мне URL на новость на lenta.ru.")
