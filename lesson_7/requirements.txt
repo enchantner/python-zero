@@ -3,7 +3,7 @@ async-timeout==2.0.0
 beautifulsoup4==4.6.0
 bs4==0.0.1
 chardet==3.0.4
-lxml==4.6.2
+lxml==4.6.3
 multidict==3.3.2
 pkg-resources==0.0.0
 telepot==12.4
